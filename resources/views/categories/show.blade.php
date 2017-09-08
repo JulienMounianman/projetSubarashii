@@ -20,6 +20,8 @@
                 <small>{{$post->created_at}}</small>
             </div>
         </div>
+
+
     @endforeach
 @endsection
 

@@ -55,7 +55,14 @@
     </div>
     @endforeach
 
-
-
-
+    @foreach($user->comments as $comment)
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"> id_commentaire :{{$comment->id}} </h3>
+            </div>
+            <div class="panel-body">
+                {{$comment->content}}
+            </div>
+        </div>
+    @endforeach
 @endsection

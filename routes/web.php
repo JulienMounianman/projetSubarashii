@@ -28,6 +28,7 @@ Route::get('/anime/top','AnimeController@top')->name('AnimeTop');
 Route::get('/anime/{id}','AnimeController@show')->name('AnimeShow');
 //Route::post('/anime/{title}','AnimeController@search')->name('AnimeSearch');
 
+Route::get('/comments','CommentController@index')->name('CommentIndex');
 
 Route::post('/contact', 'ContactController@send')->name('contact');
 

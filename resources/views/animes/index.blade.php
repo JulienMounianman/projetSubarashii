@@ -49,21 +49,67 @@
 
     <br>
     @foreach($animes as $anime)
+
         <div class="panel panel-warning">
             <div class="panel-heading">
-                <h3 class="panel-title"><a href="{{route('AnimeShow', ['id'=>$anime->id])}}">{{$anime->title}}</a></h3>
+                <h3 class="panel-title">
+                    <a href="{{route('AnimeShow', ['id'=>$anime->id])}}">{{$anime->title}}
+
+
+                    </a>
+                </h3>
             </div>
             <div class="panel-body">
                 Genres :
                 @foreach($anime->genres as $genre)
                     <button type="button" class="btn btn-info btn-xs">{{ $genre->name }}</button>
                 @endforeach
+
+            <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-xs"  data-toggle="modal" data-target="#myModal">
+                    En savoir plus
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">
+
+                                                {{$anime->title}}
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            {{$anime->pictures}} <br>
+
+                                            @if ($anime->licenced === 1)
+                                                <p>Licencié par {{$anime->vod }}</p>
+                                            @endif
+
+                                            Saison : {{$anime->season}}  / Episode : {{$anime->episode}} <br>
+                                            Statut : {{$anime->status}}
+
+                                            Synopsis : <br>
+                                             {{$anime->summary}}
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
-    @endforeach
 
 
 
 
 
+@endforeach
 @endsection

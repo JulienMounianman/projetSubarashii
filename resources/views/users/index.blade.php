@@ -9,7 +9,9 @@
 
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">{{$user->pseudo}}</h3>
+                <h3 class="panel-title">
+                    <a href="{{route('UserShow', ['id'=>$user->id])}}"> {{$user->pseudo}}</a>
+                  </h3>
             </div>
             <div class="panel-body">
                 <p>

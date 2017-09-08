@@ -19,7 +19,7 @@
             @foreach($anime->genres as $genre)
                 <i class="fa fa-tag"></i> {{ $genre->name }}
             @endforeach
-
+            
 
         </div>
     </div>

@@ -40,6 +40,7 @@ class AnimeController extends Controller
         return view('animes.show', ['anime' => $anime]);
 
     }
+    
 //    public function search($titre)
 //    {
 //
