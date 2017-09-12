@@ -64,6 +64,15 @@ Route::group(['prefix' => 'admin' , 'middleware' =>'can:access-admin'], function
     Route::get('/post/{id}/edit', 'Admin\PostController@edit')->name('AdminPostEdit');
     Route::post('/post/{id}/update', 'Admin\PostController@update')->name('AdminPostUpdate');
     Route::get('/post/{id}/destroy', 'Admin\PostController@destroy')->name('AdminPostDestroy');
+
+    Route::get('/animes/{genre?}/','Admin\AnimeController@index')->name('AdminAnimeIndex');
+    Route::get('/anime/top/{trie?}','Admin\AnimeController@top')->name('AdminAnimeTop');
+    Route::get('/anime/create', 'Admin\AnimeController@create')->name('AdminAnimeCreate');
+    Route::post('/anime/store', 'Admin\AnimeController@store')->name('AdminAnimeStore');
+    Route::get('/anime/{id}','Admin\AnimeController@show')->name('AdminAnimeShow');
+    Route::get('/anime/{id}/edit', 'Admin\AnimeController@edit')->name('AdminAnimeEdit');
+    Route::post('/anime/{id}/update', 'Admin\AnimeController@update')->name('AdminAnimeUpdate');
+    Route::get('/anime/{id}/destroy', 'Admin\AnimeController@destroy')->name('AdminAnimeDestroy');
 });
 
 Auth::routes();

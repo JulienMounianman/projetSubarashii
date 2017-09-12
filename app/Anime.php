@@ -18,6 +18,7 @@ class Anime extends Model
         'note',
         'season',
         'episode',
+
     ];
 
 

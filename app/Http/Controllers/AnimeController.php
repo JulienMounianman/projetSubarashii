@@ -25,7 +25,7 @@ class AnimeController extends Controller
         return view('animes.index', ['animes' => $resultats, 'genre' => $genre]);
     }
 
-    public function top($trie = null)
+    public function top($trie = 'note')
     {
 
         $animes = Anime::query();

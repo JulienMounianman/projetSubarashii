@@ -63,12 +63,28 @@
                     </ul>
                 </li>
 
+
                 <li>
                     <a href="{{ route('AdminUserIndex') }}" class="navbar-item">
                         <i class="glyphicon glyphicon-user"></i> Membres
                     </a>
                 </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Animes <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{{ route('AdminAnimeIndex') }}" class="navbar-item">
+                                <i class="glyphicon glyphicon-list"></i> Liste
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('AdminAnimeCreate') }}" class="navbar-item">
+                                <i class="glyphicon glyphicon-plus"></i> Nouvel anime
+                            </a>
+                        </li>
 
+                    </ul>
+                </li>
 
                 @component('elements.user-menu')@endcomponent
             </ul>

@@ -21,6 +21,7 @@
         }
         body {
             background-color: #1b6d85;
+
         }
         .random {
             background-color: #cccccc;
@@ -31,6 +32,7 @@
         .contenu {
             margin: 5px;
         }
+      
 
     </style>
 
@@ -40,14 +42,14 @@
     @endcomponent
 
     <div class =" container-fluid">
-    <div class ="contenu row">
+        <div class ="contenu row">
 
 
-            <div class="col-md-2 random">
+            <div class="col-md-2 col-xs-2 col-lg-2 random">
                 @component('elements.random')
                 @endcomponent
             </div>
-            <div class="col-md-8 firstdiv " >
+            <div class="col-md-7 col-xs-7 col-lg-7 firstdiv " >
 
 
                 @if (session('status'))
@@ -85,20 +87,19 @@
             </div>
 
 
-        <div class="col-md-2">
+            <div class=" random col-md-2 col-xs-2 col-lg-2">
             @component('elements.lasts_comments')
             @endcomponent
 
+            </div>
+        </div>
+
+
+        <div class="col-md-12">
+        @component('elements.footer')
+        @endcomponent
         </div>
     </div>
-    </div>
-
-    <div class="col-md-12">
-    @component('elements.footer')
-    @endcomponent
-    </div>
-
-
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
