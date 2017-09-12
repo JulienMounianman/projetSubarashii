@@ -24,7 +24,7 @@ Route::get('/', 'PostController@index')->name('PostIndex');
 Route::get('/post/{id}', 'PostController@show')->name('PostShow');
 
 Route::get('/animes/{genre?}/','AnimeController@index')->name('AnimeIndex');
-Route::get('/anime/top','AnimeController@top')->name('AnimeTop');
+Route::get('/anime/top/{trie?}','AnimeController@top')->name('AnimeTop');
 Route::get('/anime/{id}','AnimeController@show')->name('AnimeShow');
 //Route::post('/anime/{title}','AnimeController@search')->name('AnimeSearch');
 

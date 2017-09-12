@@ -25,11 +25,46 @@ class AnimeController extends Controller
         return view('animes.index', ['animes' => $resultats, 'genre' => $genre]);
     }
 
-    public function top()
+    public function top($trie = null)
     {
-        $animes = Anime::all();
 
-        return view('animes.top', ['animes' => $animes]);
+        $animes = Anime::query();
+        $animes->select();
+
+        if ($trie === 'note+') {
+            $animes->orderBy('note', 'desc');
+        }
+        if ($trie === 'season+') {
+            $animes->orderBy('season', 'desc');
+        }
+        if ($trie === 'episode+') {
+            $animes->orderBy('episode', 'desc');
+        }
+        if ($trie === 'title+') {
+            $animes->orderBy('title', 'asc');
+        }
+        if ($trie === 'note-') {
+            $animes->orderBy('note', 'asc');
+        }
+        if ($trie === 'season-') {
+            $animes->orderBy('season', 'asc');
+        }
+        if ($trie === 'episode-') {
+            $animes->orderBy('episode', 'asc');
+        }
+        if ($trie === 'title-') {
+            $animes->orderBy('title', 'desc');
+        }
+
+
+
+
+
+
+
+
+        $resultats = $animes->get();
+        return view('animes.top', ['animes' => $resultats , 'trie' => $trie]);
     }
 
     public function show($id)
@@ -40,7 +75,9 @@ class AnimeController extends Controller
         return view('animes.show', ['anime' => $anime]);
 
     }
-    
+
+
+
 //    public function search($titre)
 //    {
 //

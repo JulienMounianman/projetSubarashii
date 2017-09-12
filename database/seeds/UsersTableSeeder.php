@@ -63,7 +63,7 @@ class UsersTableSeeder extends Seeder
                 'pictures' => $faker->catchPhrase,
                 'vod' => $faker->catchPhrase,
                 'summary' => $faker->realText(200, 2),
-                'note' => $faker->numberBetween(1, 11),
+                'note' => $faker->numberBetween(1, 10),
                 'season' => $faker->numberBetween(1, 11),
                 'episode' => $faker->numberBetween(1, 11),
                 'licenced' => $faker->boolean(50),
