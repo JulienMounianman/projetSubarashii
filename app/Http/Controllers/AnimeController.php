@@ -87,4 +87,13 @@ class AnimeController extends Controller
 //
 //    }
 
+    public function random (){
+
+        $anime = Anime::inRandomOrder()->get();
+
+
+
+        return view('elements.random', ['anime' => $anime]);
+    }
+
 }

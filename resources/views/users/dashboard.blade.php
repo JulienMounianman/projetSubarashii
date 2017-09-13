@@ -8,17 +8,7 @@
         <div class="panel-heading"><img src="{{asset('img/' . auth()->user()->avatar)}}" alt="img" class=""></div>
         <div class="panel-body">
 
-            Nom :<strong>{{auth()->user()->first_name}}</strong>
-
-            @if (auth()->user()->first_name === null )
-                <form method="POST" action="{{ route('register') }}">
-                    {{ csrf_field() }}
-                <label for="first_name"></label>
-                <input id="first_name" type="text" name="first_name" >
-                </form>
-
-            @endif
-                <br>
+            Nom :<strong>{{auth()->user()->first_name}}</strong> <br>
 
             Prenom : {{auth()->user()->last_name}}  <br>
 

@@ -31,7 +31,9 @@ Route::post('/post/comment/{id}', 'PostController@comment')->name('PostComment')
 Route::get('/animes/{genre?}/','AnimeController@index')->name('AnimeIndex');
 Route::get('/anime/top/{trie?}','AnimeController@top')->name('AnimeTop');
 Route::get('/anime/{id}','AnimeController@show')->name('AnimeShow');
-//Route::post('/anime/{title}','AnimeController@search')->name('AnimeSearch');
+
+
+
 
 Route::get('/comments','CommentController@index')->name('CommentIndex');
 
