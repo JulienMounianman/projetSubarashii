@@ -33,6 +33,8 @@ class UserController extends Controller
 
     public function dashboard()
     {
-        return view('admin.users.dashboard');
+        return view('users.dashboard');
     }
+
+
 }

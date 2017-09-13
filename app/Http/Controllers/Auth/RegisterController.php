@@ -51,10 +51,10 @@ class RegisterController extends Controller
             'pseudo' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
-            'first_name' => 'required|string|max:255',
-            'last_name' => 'required|string|max:255',
-            'portfolio_url' => 'required|string|max:255',
-            'website_url' => 'required|string|max:255',
+            'first_name' => '|max:255',
+            'last_name' => '|max:255',
+            'portfolio_url' => '|max:255',
+            'website_url' => '|max:255',
         ]);
     }
 

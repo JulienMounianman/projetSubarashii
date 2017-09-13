@@ -16,6 +16,8 @@ Route::get('/category/{id}', 'CategoryController@show')->name('CatShow');
 
 Route::get('/users', 'UserController@index')->name('UserIndex');
 Route::get('/user/{id}', 'UserController@show')->name('UserShow');
+Route::get('/dashboard', 'UserController@dashboard')->name('UserDashboard');
+
 
 Route::get('/tags', 'TagController@index')->name('TagIndex');
 Route::get('/tag/{id}', 'TagController@show')->name('TagShow');
@@ -23,12 +25,16 @@ Route::get('/tag/{id}', 'TagController@show')->name('TagShow');
 Route::get('/', 'PostController@index')->name('PostIndex');
 Route::get('/post/{id}', 'PostController@show')->name('PostShow');
 
+Route::post('/post/comment/{id}', 'PostController@comment')->name('PostComment');
+
+
 Route::get('/animes/{genre?}/','AnimeController@index')->name('AnimeIndex');
 Route::get('/anime/top/{trie?}','AnimeController@top')->name('AnimeTop');
 Route::get('/anime/{id}','AnimeController@show')->name('AnimeShow');
 //Route::post('/anime/{title}','AnimeController@search')->name('AnimeSearch');
 
 Route::get('/comments','CommentController@index')->name('CommentIndex');
+
 
 Route::post('/contact', 'ContactController@send')->name('contact');
 

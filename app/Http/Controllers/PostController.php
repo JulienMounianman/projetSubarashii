@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use App\Post;
+use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -13,8 +15,17 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        return view('posts.index', ['posts' => $posts]);
+
+
+        $post = Post::query();
+        $post->select();
+
+        $post->orderBy('updated_at', 'desc');
+
+        $resultats = $post->get();
+
+
+        return view('posts.index', ['posts' => $resultats]);
     }
 
     /**
@@ -30,4 +41,28 @@ class PostController extends Controller
         return view('posts.show', ['post' => $post]);
 
     }
+
+    public function comment(Request $request ,  $id)
+    {
+        $this->validate($request, [
+            'content' => 'required|string',
+        ]);
+        $data = $request->all();
+
+        $data['user_id'] = auth()->user()->id;
+        $data['post_id'] = $id;
+
+
+        $comment = Comment::create($data);
+
+
+
+        return redirect()->route('PostShow', ['id' => $id]);
+
+    }
+
+
+
+
+
 }

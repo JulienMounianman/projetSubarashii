@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->date('birthdate')->nullable();
             $table->string('portfolio_url')->nullable();
             $table->string('website_url')->nullable();
+            $table->string('avatar')->default('User_avatar.png');
 
         });
     }
