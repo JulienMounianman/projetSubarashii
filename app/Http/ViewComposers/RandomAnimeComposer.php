@@ -16,18 +16,8 @@ class RandomAnimeComposer
      */
     public function compose(View $view)
     {
+        $anime = Anime::inRandomOrder()->get();
 
-        $animes = Anime::query();
-        $animes->select();
-
-
-        $animes->where('title','=','Profit-focused nextgeneration approach');
-
-
-        $resultats = $animes->get();
-
-
-
-        $view->with('randomAnime', $resultats);
+        $view->with('randomAnime', $anime[0]);
     }
 }

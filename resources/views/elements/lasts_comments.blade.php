@@ -7,7 +7,16 @@
 <br>
 <br>
 <br>
-<br><h1 class="text-center">Commentaires</h1>
+<br>
+
+
+
+    <p><strong>{{$commentaires->user->pseudo}} </strong> a commenté l'article
+        <strong>{{$commentaires->post->title}}</strong></p>
+
+
+
+
 <br>
 <br>
 <br>

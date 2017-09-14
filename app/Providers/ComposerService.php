@@ -17,6 +17,9 @@ class ComposerService extends ServiceProvider
         View::composer(
             '*', 'App\Http\ViewComposers\RandomAnimeComposer'
         );
+        View::composer(
+            '*', 'App\Http\ViewComposers\LastCommentsComposer'
+        );
     }
 
     /**
