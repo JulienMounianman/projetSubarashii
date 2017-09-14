@@ -27,10 +27,19 @@
                         <a href="{{route('UserShow' , ['id' => $post->user->id]) }}"> {{$post->user->pseudo}}</a>
                     </div>
                 </div>
+
+
+
         @endforeach
+            <nav aria-label="...">
+                <ul class="pager">
+                    <li class="previous"><a href=""><span aria-hidden="true">&larr;</span> Précédent</a></li>
+                    <li class="next"><a href="#">Suivant <span aria-hidden="true">&rarr;</span></a></li>
+                </ul>
+            </nav>
     </div>
 
 
-    
+
 @endsection
 

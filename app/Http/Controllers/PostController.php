@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Comment;
 use App\Post;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -20,7 +21,7 @@ class PostController extends Controller
         $post = Post::query();
         $post->select();
 
-        $post->orderBy('updated_at', 'desc');
+        $post->orderBy('updated_at', 'desc')->paginate(5);
 
         $resultats = $post->get();
 

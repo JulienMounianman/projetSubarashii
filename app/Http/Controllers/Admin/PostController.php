@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\Controller;
 
 use App\Post;
 use App\Tag;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -25,7 +26,7 @@ class PostController extends Controller
         $post = Post::query();
         $post->select();
 
-        $post->orderBy('updated_at', 'desc');
+        $post->orderBy('updated_at', 'desc')->paginate(10);
 
         $resultats = $post->get();
 
