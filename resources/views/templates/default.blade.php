@@ -1,18 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Blog321 - @yield('title')</title>
 
 
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 
-    <!-- Compiled and minified JavaScript -->
-
-
-    <!-- Add the CSRF token in a meta tag to have it easily in JS -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <style>
+
         .firstdiv {
             background-color: #cccccc;
 
@@ -32,9 +30,20 @@
         .contenu {
             margin: 5px;
         }
-      
+        #logo {
+            width: 200px;
+            height: 50px;
+
+        }
+        .container-fluid {
+
+            padding-left: 0px;
+            padding-right: 0px;
+
+        }
 
     </style>
+
 
 </head>
 <body>
@@ -100,6 +109,8 @@
         @endcomponent
         </div>
     </div>
+
+
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

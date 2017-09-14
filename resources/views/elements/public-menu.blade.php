@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navmarg">
+<nav class="navbar navbar-inverse navmarg">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{route('PostIndex')}}">Subarashii</a>
+            <img alt="logo" id="logo"  href="{{route('PostIndex')}}" class="img-responsive"  src="{{asset('img/logo.png')}}">
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
