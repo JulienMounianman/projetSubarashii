@@ -16,8 +16,8 @@ class RandomAnimeComposer
      */
     public function compose(View $view)
     {
-        $anime = Anime::inRandomOrder()->get();
+        $anime = Anime::inRandomOrder()->get()->first();
 
-        $view->with('randomAnime', $anime[0]);
+        $view->with('randomAnime', $anime);
     }
 }

@@ -31,6 +31,14 @@
     <br>
     {!! Form::label('licenced') !!}
     {!! Form::text('licenced') !!}
+    <br>
+    {!! Form::label('release_date') !!}
+    {!! Form::date('release_date') !!}
+    <br>
+    {!! Form::label('end_date') !!}
+    {!! Form::date('end_date') !!}
+    <br>
+
 
 
     {!! Form::submit('Enregistrer') !!}
