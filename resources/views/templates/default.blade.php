@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Blog321 - @yield('title')</title>
+    <title>Subarashii - @yield('title')</title>
 
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
@@ -45,7 +45,24 @@
             padding-right: 0px;
 
         }
-
+        .image-anime
+        {
+            max-width: 20%;
+            height: auto;
+            margin-left: 40%;
+        }
+        .titre-anime {
+            font-size: 50px;
+        }
+        .basdepage {
+            border: 1px solid black;
+            background-color: #cccccc;
+        }
+        .image-anime-random
+        {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 
 
@@ -113,7 +130,7 @@
     </div>
 
 
-    <div class="col-md-12">
+    <div class="col-md-12 ">
         @component('elements.footer')
         @endcomponent
     </div>

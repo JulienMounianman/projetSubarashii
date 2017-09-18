@@ -55,17 +55,3 @@ class AddTimestamps extends Migration
         });
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

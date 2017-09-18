@@ -53,10 +53,7 @@
         <div class="panel panel-warning">
             <div class="panel-heading">
                 <h3 class="panel-title">
-                    <a href="{{route('AnimeShow', ['id'=>$anime->id])}}">{{$anime->title}}
-
-
-                    </a>
+                    <a href="{{route('AnimeShow', ['id'=>$anime->id])}}">{{$anime->title}}</a>
                 </h3>
             </div>
             <div class="panel-body">
@@ -66,33 +63,34 @@
                 @endforeach
 
             <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary btn-xs"  data-toggle="modal" data-target="#myModal">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-{{$anime->id}}">
                     En savoir plus
                 </button>
 
                 <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal fade" id="modal-{{$anime->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
                                 <h4 class="modal-title" id="myModalLabel">
 
-                                                {{$anime->title}}
-                                            </h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            {{$anime->pictures}} <br>
+                                    {{$anime->title}}
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                {{$anime->pictures}} <br>
 
-                                            @if ($anime->licenced === 1)
-                                                <p>Licencié par {{$anime->vod }}</p>
-                                            @endif
+                                @if ($anime->licenced === 1)
+                                    <p>Licencié par {{$anime->vod }}</p>
+                                @endif
 
-                                            Saison : {{$anime->season}}  / Episode : {{$anime->episode}} <br>
-                                            Statut : {{$anime->status}}
+                                Saison : {{$anime->season}} / Episode : {{$anime->episode}} <br>
+                                Statut : {{$anime->status}}
 
-                                            Synopsis : <br>
-                                             {{$anime->summary}}
+                                Synopsis : <br>
+                                {{$anime->summary}}
 
                             </div>
                             <div class="modal-footer">
@@ -102,14 +100,8 @@
                     </div>
                 </div>
 
-
-
             </div>
         </div>
 
-
-
-
-
-@endforeach
+    @endforeach
 @endsection
