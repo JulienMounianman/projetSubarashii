@@ -5,7 +5,7 @@
 @section('content')
 
 
-    <form action="{{ route('AnimeIndex')  }}" method="get">
+    <form action="{{ route('AdminAnimeIndex')  }}" method="get">
         {{ csrf_field() }}
         <div class="input-group">
             <input type="text" class="form-control" name="title" placeholder="Search for...">
