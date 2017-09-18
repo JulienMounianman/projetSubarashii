@@ -45,7 +45,22 @@
             padding-right: 0px;
 
         }
+.image-anime
+{
+    max-width: 20%;
+    height: auto;
+    margin-left: 40%;
+}
+        .image-anime-random
+        {
+            max-width: 100%;
+            height: auto;
 
+        }
+        .titre-anime
+        {
+            font-size: 50px;
+        }
     </style>
 
 
