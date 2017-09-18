@@ -12,6 +12,7 @@
 <p>{{$randomAnime->summary}}</p><br>
 
 <img src="{{asset('img/'.$randomAnime->pictures)}}" alt="image-anime" class="image-anime-random">
+
 <br>
 <br>
 <br>

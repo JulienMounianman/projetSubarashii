@@ -27,19 +27,19 @@
 
 
 
-
+    @auth
     <form action="{{route('PostComment', ['id'=>$post->id])}}" method="POST">
         {{csrf_field()}}
 
         <label for="content"></label>
-        <textarea rows="4" cols="50" name="content" id="content" name="content" required autofocus></textarea>
+        <textarea rows="6" cols="50" name="content" id="content" name="content" required autofocus></textarea>
 
         <button type="submit" class="btn btn-primary">
             Publier
         </button>
     </form>
 
-
+    @endauth
 
 
 
@@ -58,7 +58,7 @@
                     <br> Update : {{$comment->created_at->diffForHumans(now())}}</small>
             </div>
         </div>
-
-
     @endforeach
+
+
 @endsection

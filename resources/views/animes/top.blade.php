@@ -49,7 +49,7 @@
                 <td>{{$anime->release_date}}</td>
                 <td>
                     @if($anime->licenced === 1)
-                        {{$anime->vod}}
+                        Licencié par : {{$anime->vod}}
                          @else
                         <p>Non liencié</p>
                     @endif
