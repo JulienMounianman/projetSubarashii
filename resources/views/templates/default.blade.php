@@ -21,7 +21,7 @@
         }
 
         body {
-            background-color: #1b6d85;
+            background-image:url('{{asset('img/anime-membre.jpg')}}');
 
         }
 
