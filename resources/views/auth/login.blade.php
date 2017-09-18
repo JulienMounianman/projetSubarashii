@@ -10,13 +10,13 @@
     @if ($errors->has('email'))
         <strong>{{ $errors->first('email') }}</strong>
     @endif
-
+    <br>
     {!! Form::label('password', 'Mot de passe', ['class'=>'label']) !!}
     {!! Form::password('password', ['required', 'autofocus', 'class'=>'input']) !!}
     @if ($errors->has('password'))
         <strong>{{ $errors->first('password') }}</strong>
     @endif
-
+    <br>
     <label for="remember" class="label">
         {!! Form::checkbox('remember', old('remember'), ['id'=>'remember', 'class'=>'checkbox']) !!} Se souvenir de moi
     </label>

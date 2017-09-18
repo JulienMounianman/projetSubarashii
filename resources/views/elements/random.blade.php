@@ -1,32 +1,11 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br><h1 class="text-center">{{$randomAnime->title}}</h1><br>
 
-<p>{{$randomAnime->summary}}</p><br>
-
+<br><h1 class="text-center">
+    <a href="{{route('AnimeShow', ['id'=>$randomAnime->id])}}">{{$randomAnime->title}}</a>
+</h1><br>
 <img src="{{asset('img/'.$randomAnime->pictures)}}" alt="image-anime" class="image-anime-random">
+{{$randomAnime->summary}}<br>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 
 
