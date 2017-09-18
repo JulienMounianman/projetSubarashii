@@ -43,12 +43,12 @@ class UsersTableSeeder extends Seeder
                 'updated_at' => $faker->dateTimeBetween($startDate = '-2 years', $endDate = 'now', $timezone = date_default_timezone_get())
             ]);
         }
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             DB::table('posts')->insert([
                 'title' => $faker->catchPhrase,
                 'content' => $faker->realText(200, 2),
                 'category_id' => $faker->numberBetween(1, 10),
-                'user_id' => $faker->numberBetween(1, 11),
+                'user_id' => $faker->numberBetween(1, 10),
                 'created_at' => $faker->dateTimeBetween($startDate = '-2 years', $endDate = 'now', $timezone = date_default_timezone_get()),
                 'updated_at' => $faker->dateTimeBetween($startDate = '-2 years', $endDate = 'now', $timezone = date_default_timezone_get())
 
@@ -56,31 +56,17 @@ class UsersTableSeeder extends Seeder
         }
 
 
-        for ($i = 0; $i < 100; $i++) {
-            DB::table('animes')->insert([
-                'title' => $faker->catchPhrase,
-                'status' => $faker->catchPhrase,
-                'pictures' => $faker->catchPhrase,
-                'vod' => $faker->catchPhrase,
-                'summary' => $faker->realText(200, 2),
-                'note' => $faker->numberBetween(1, 10),
-                'season' => $faker->numberBetween(1, 11),
-                'episode' => $faker->numberBetween(1, 11),
-                'licenced' => $faker->boolean(50),
 
-            ]);
-        }
-
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             DB::table('genres')->insert([
                 'name' => $faker->catchPhrase,
             ]);
         }
 
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             DB::table('anime_genre')->insert([
-                'anime_id' => $faker->numberBetween(1, 100),
-                'genre_id' => $faker->numberBetween(1, 100),
+                'anime_id' => $faker->numberBetween(1, 10),
+                'genre_id' => $faker->numberBetween(1, 10),
 
             ]);
         }
@@ -90,7 +76,7 @@ class UsersTableSeeder extends Seeder
             DB::table('comments')->insert([
                 'content' => $faker->realText(200, 2),
                 'user_id' => $faker->numberBetween(1, 11),
-                'post_id' => $faker->numberBetween(1, 100),
+                'post_id' => $faker->numberBetween(1, 10),
                 'created_at' => $faker->dateTimeBetween($startDate = '-2 years', $endDate = 'now', $timezone = date_default_timezone_get()),
                 'updated_at' => $faker->dateTimeBetween($startDate = '-2 years', $endDate = 'now', $timezone = date_default_timezone_get())
             ]);

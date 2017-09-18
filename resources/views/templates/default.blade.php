@@ -21,7 +21,7 @@
         }
 
         body {
-            background-color: #1b6d85;
+            background-image:url('{{asset('img/anime-membre.jpg')}}');
 
         }
 
@@ -45,24 +45,30 @@
             padding-right: 0px;
 
         }
-        .image-anime
-        {
-            max-width: 20%;
-            height: auto;
-            margin-left: 40%;
-        }
-        .titre-anime {
-            font-size: 50px;
-        }
-        .basdepage {
-            border: 1px solid black;
-            background-color: #cccccc;
-        }
+
+.image-anime
+{
+    max-width: 20%;
+    height: auto;
+    margin-left: 40%;
+}
         .image-anime-random
         {
             max-width: 100%;
             height: auto;
+
         }
+        .titre-anime
+        {
+            font-size: 50px;
+        }
+
+        .basdepage {
+            border: 1px solid black;
+            background-color: #cccccc;
+        }
+   
+
     </style>
 
 

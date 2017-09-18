@@ -7,9 +7,10 @@
 
     <div class="panel panel-primary">
         <div class="panel-heading">
-            <h1 class="panel-title text-center titre-anime">
-                {{$anime->title}}</h1>
-            <img class="image-anime" src="{{asset('img/'.$anime->pictures)}}" alt="image-anime">
+
+            <h1 class="titre-anime panel-title text-center">{{$anime->title}}</h1>
+            <img src="{{asset('img/'.$anime->pictures)}}" alt="image-anime" class="image-anime">
+
         </div>
         <div class="panel-body">
 
@@ -29,7 +30,8 @@
             @foreach($anime->genres as $genre)
                 <i class="fa fa-tag"></i> {{ $genre->name }}
             @endforeach
-            
+
+
 
         </div>
     </div>
