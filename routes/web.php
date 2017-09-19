@@ -16,7 +16,8 @@ Route::get('/category/{id}', 'CategoryController@show')->name('CatShow');
 
 Route::get('/users', 'UserController@index')->name('UserIndex');
 Route::get('/user/{id}', 'UserController@show')->name('UserShow');
-Route::get('/dashboard', 'UserController@dashboard')->name('UserDashboard');
+Route::get('/user/{id}/edit', 'UserController@dashboard')->name('UserDashboard');
+Route::post('/user/{id}/update', 'UserController@update')->name('UserUpdate');
 
 
 Route::get('/tags', 'TagController@index')->name('TagIndex');

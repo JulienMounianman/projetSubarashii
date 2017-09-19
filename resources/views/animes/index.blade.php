@@ -32,6 +32,7 @@
         <div class="col-md-3 col-xs-12 col-sm-12 text-center">
             <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>4]) }}">Ecchi</a>
         </div>
+
         <div class="col-md-3 col-xs-12 col-sm-12 text-center">
             <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>5]) }}">Epique & Héroique</a>
         </div>
@@ -44,6 +45,7 @@
         <div class="col-md-3 col-xs-12 col-sm-12 text-center">
             <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>8]) }}">Musical</a>
         </div>
+
 
         <div class="col-md-3 col-xs-12 col-sm-12 text-center">
             <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>9]) }}">Romance</a>
@@ -143,6 +145,8 @@
                      aria-labelledby="myModalLabel"
                      data-backdrop="false" >
 
+
+  
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -180,5 +184,6 @@
     @endforeach
 
 @endsection
+
 
 

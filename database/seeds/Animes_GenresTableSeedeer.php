@@ -66,6 +66,7 @@ class Animes_GenresTableSeedeer extends Seeder
             'genre_id' => '14',
         ]);
 
+
         DB::table('anime_genre')->insert([
             'anime_id' => '3',
             'genre_id' => '1',
@@ -442,6 +443,7 @@ class Animes_GenresTableSeedeer extends Seeder
             'anime_id' => '26',
             'genre_id' => '21',
         ]);
+
 
     }
 }

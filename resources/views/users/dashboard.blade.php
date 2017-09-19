@@ -23,6 +23,32 @@
         </div>
     </div>
 
+
+
+    {!! Form::model($user, ['route'=>['UserUpdate', $user->id]]) !!}
+
+    {!! Form::label('pseudo') !!}
+    {!! Form::text('pseudo') !!}
+
+
+    <br>
+    {!! Form::label('birthdate') !!}
+    {!! Form::date('birthdate') !!}
+<br>
+        {!! Form::label('password') !!}
+        {!! Form::password('password') !!}
+
+    <br>
+    {!! Form::label('first_name') !!}
+    {!! Form::text('first_name') !!}
+    <br>
+    {!! Form::label('last_name') !!}
+    {!! Form::text('last_name') !!}
+
+    <br>
+    {!! Form::submit('Enregistrer') !!}
+    {!! Form::close() !!}
+
     
 
 

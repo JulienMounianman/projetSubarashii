@@ -83,7 +83,6 @@
             margin-left:20px;
             margin-right: 20px;
             margin-top:20px;
-
         }
 
 @yield('style')
@@ -155,8 +154,8 @@
 
 
 
-    <div class="col-md-12 basdepage">
 
+    <div class="col-md-12 basdepage">
         @component('elements.footer')
         @endcomponent
     </div>

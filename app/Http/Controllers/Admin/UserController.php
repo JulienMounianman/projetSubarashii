@@ -58,7 +58,10 @@ class UserController extends Controller
     {
         // validation des données
         $this->validate($request, [
-            'email' => 'required|email|unique:users',
+            'pseudo' => '|string|max:255',
+            'first_name' => '|max:255',
+            'last_name' => '|max:255',
+            'role' => '|max:255',
         ]);
         $user = User::findOrFail($id);
 
