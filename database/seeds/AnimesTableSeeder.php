@@ -22,6 +22,8 @@ class AnimesTableSeeder extends Seeder
             'season' => '1',
             'episode' => '24',
             'licenced' => '0',
+            'release_date' => '2012-04-06',
+            'end_date' => '2012-09-21'
 
         ]);
 
@@ -38,6 +40,9 @@ class AnimesTableSeeder extends Seeder
             'season' => '2',
             'episode' => '24',
             'licenced' => '1',
+            'release_date' => '2014-07-05',
+            'end_date' => '2015-03-28'
+
 
         ]);
         DB::table('animes')->insert([
@@ -50,6 +55,8 @@ class AnimesTableSeeder extends Seeder
             'season' => '1',
             'episode' => '13',
             'licenced' => '1',
+            'release_date' => '2015-07-04',
+            'end_date' => '2015-09-26'
 
         ]);
         DB::table('animes')->insert([
@@ -62,6 +69,9 @@ class AnimesTableSeeder extends Seeder
             'season' => '2',
             'episode' => '38',
             'licenced' => '1',
+            'release_date' => '2016-04-03',
+            'end_date' => '2016-09-23'
+
 
         ]);
         DB::table('animes')->insert([
@@ -74,6 +84,9 @@ class AnimesTableSeeder extends Seeder
             'season' => '1',
             'episode' => '12',
             'licenced' => '1',
+            'release_date' => '2015-07-02',
+            'end_date' => '2015-09-28'
+
 
         ]);
         DB::table('animes')->insert([
@@ -86,6 +99,8 @@ class AnimesTableSeeder extends Seeder
             'season' => '3',
             'episode' => '75',
             'licenced' => '1',
+            'release_date' => '2012-06-07',
+            'end_date' => '2015-07-01'
 
         ]);
         DB::table('animes')->insert([
@@ -98,6 +113,9 @@ class AnimesTableSeeder extends Seeder
             'season' => '1',
             'episode' => '12',
             'licenced' => '1',
+            'release_date' => '2014-04-09',
+            'end_date' => '2014-06-25'
+
 
         ]);
         DB::table('animes')->insert([
@@ -110,6 +128,9 @@ class AnimesTableSeeder extends Seeder
             'season' => '2',
             'episode' => '24',
             'licenced' => '1',
+            'release_date' => '2015-04-04',
+            'end_date' => '2015-12-26'
+
 
         ]);
         DB::table('animes')->insert([
@@ -122,6 +143,8 @@ class AnimesTableSeeder extends Seeder
             'season' => '1',
             'episode' => '24',
             'licenced' => '0',
+            'release_date' => '2012-10-04',
+            'end_date' => '2013-03-29'
 
         ]);
         DB::table('animes')->insert([
@@ -134,6 +157,9 @@ class AnimesTableSeeder extends Seeder
             'season' => '1',
             'episode' => '12',
             'licenced' => '1',
+            'release_date' => '2016-04-05',
+            'end_date' => '2016-06-21'
+
 
         ]);
         DB::table('animes')->insert([
@@ -146,6 +172,9 @@ class AnimesTableSeeder extends Seeder
             'season' => '4',
             'episode' => '103',
             'licenced' => '1',
+            'release_date' => '2012-10-05',
+            'end_date' => '2016-12-23'
+
 
         ]);
         DB::table('animes')->insert([
@@ -158,6 +187,9 @@ class AnimesTableSeeder extends Seeder
             'season' => '1',
             'episode' => '13',
             'licenced' => '0',
+            'release_date' => '2002-04-04',
+            'end_date' => '2002-06-27'
+
 
         ]);
         DB::table('animes')->insert([
@@ -170,6 +202,9 @@ class AnimesTableSeeder extends Seeder
             'season' => '1',
             'episode' => '12',
             'licenced' => '0',
+            'release_date' => '2015-01-04',
+            'end_date' => '2015-03-22'
+
 
         ]);
         DB::table('animes')->insert([
@@ -184,6 +219,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '25',
             'licenced' => '0',
+            'release_date' => '2006-04-04',
+            'end_date' => '2006-09-27'
+
 
         ]);
         DB::table('animes')->insert([
@@ -196,6 +234,8 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '24',
             'licenced' => '1',
+            'release_date' => '2014-07-07',
+            'end_date' => '2014-12-14'
 
         ]);
         DB::table('animes')->insert([
@@ -208,6 +248,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '12',
             'licenced' => '0',
+            'release_date' => '2014-04-03',
+            'end_date' => '2014-06-19'
+
 
         ]);
         DB::table('animes')->insert([
@@ -220,6 +263,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '12',
             'licenced' => '0',
+            'release_date' => '2012-10-04',
+            'end_date' => '2012-12-20'
+
 
         ]);
         DB::table('animes')->insert([
@@ -232,6 +278,8 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '26',
             'licenced' => '1',
+            'release_date' => '1995-10-04',
+            'end_date' => '1996-03-27'
 
         ]);
         DB::table('animes')->insert([
@@ -244,6 +292,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '51',
             'licenced' => '0',
+            'release_date' => '2003-10-04',
+            'end_date' => '2004-10-02'
+
 
         ]);
         DB::table('animes')->insert([
@@ -256,6 +307,8 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '64',
             'licenced' => '0',
+            'release_date' => '2009-04-05',
+            'end_date' => '2010-07-04'
 
         ]);
         DB::table('animes')->insert([
@@ -268,6 +321,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '26',
             'licenced' => '1',
+            'release_date' => '2011-10-10',
+            'end_date' => '2012-04-12'
+
 
         ]);
         DB::table('animes')->insert([
@@ -280,6 +336,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '2',
             'episode' => '33',
             'licenced' => '0',
+            'release_date' => '2012-10-12',
+            'end_date' => '2014-12-18'
+
 
         ]);
         DB::table('animes')->insert([
@@ -292,6 +351,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '24',
             'licenced' => '1',
+            'release_date' => '2011-04-06',
+            'end_date' => '2011-09-14'
+
 
         ]);
         DB::table('animes')->insert([
@@ -304,6 +366,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '1',
             'episode' => '12',
             'licenced' => '0',
+            'release_date' => '2009-01-03',
+            'end_date' => '2009-03-28'
+
 
         ]);
         DB::table('animes')->insert([
@@ -316,6 +381,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '18',
             'episode' => '802',
             'licenced' => '0',
+            'release_date' => '1999-10-20',
+            'end_date' => '2050-01-01'
+
 
         ]);
 
@@ -336,6 +404,9 @@ Itsuki « Ikki » Minami est un collégien plutôt bagarreur vivant chez quatre 
             'season' => '21',
             'episode' => '873',
             'licenced' => '1',
+            'release_date' => '1996-01-08',
+            'end_date' => '2050-01-01'
+
 
         ]);
 

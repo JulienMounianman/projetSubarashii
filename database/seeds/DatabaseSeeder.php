@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
          $this->call(CommentsTableSeedeer::class);
          $this->call(Animes_GenresTableSeedeer::class);
 
+
     }
 }
