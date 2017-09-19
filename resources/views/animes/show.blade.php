@@ -36,20 +36,20 @@
             {{$anime->vod}} <br> <br>
             note : <br>
             {{$anime->note}} <br> <br>
-            season : <br>
+            saison : <br>
             {{$anime->season}} <br> <br>
             episode : <br>
             {{$anime->episode}} <br> <br>
-            Date de début : <br>
+            date de début : <br>
             {{$anime->release_date}} <br> <br>
-            Date de fin : <br>
+            date de fin : <br>
             {{$anime->end_date}} <br> <br>
+
 
             Genres :
             @foreach($anime->genres as $genre)
                 <i class="fa fa-tag"></i> {{ $genre->name }}
             @endforeach
-
 
 
         </div>

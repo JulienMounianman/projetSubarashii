@@ -46,6 +46,7 @@
             <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>8]) }}">Musical</a>
         </div>
 
+
         <div class="col-md-3 col-xs-12 col-sm-12 text-center">
             <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>9]) }}">Romance</a>
         </div>
@@ -140,8 +141,12 @@
 
                 <!-- Modal -->
                 <div class="modal fade" id="modal-{{$anime->id}}" tabindex="-1" role="dialog"
+
                      aria-labelledby="myModalLabel"
                      data-backdrop="false" >
+
+
+  
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -177,5 +182,8 @@
         </div>
 
     @endforeach
+
 @endsection
+
+
 

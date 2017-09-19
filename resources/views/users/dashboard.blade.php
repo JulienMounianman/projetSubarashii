@@ -24,6 +24,7 @@
     </div>
 
 
+
     {!! Form::model($user, ['route'=>['UserUpdate', $user->id]]) !!}
 
     {!! Form::label('pseudo') !!}
@@ -47,6 +48,7 @@
     <br>
     {!! Form::submit('Enregistrer') !!}
     {!! Form::close() !!}
+
     
 
 
