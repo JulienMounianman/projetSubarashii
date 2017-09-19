@@ -20,27 +20,97 @@
 
 
 
-    <label class="checkbox-inline">
-        <a href="{{ route('AnimeIndex', ['genre'=>1]) }}">Romance</a>
-    </label>
-    <label class="checkbox-inline">
-        <a href="{{ route('AnimeIndex', ['genre'=>2]) }}">Action</a>
-    </label>
-    <label class="checkbox-inline">
-        <a href="{{ route('AnimeIndex', ['genre'=>3]) }}">Aventure</a>
-    </label>
-    <label class="checkbox-inline">
-        <a href="{{ route('AnimeIndex', ['genre'=>4]) }}">Ecchi</a>
-    </label>
-    <label class="checkbox-inline">
-        <a href="{{ route('AnimeIndex', ['genre'=>5]) }}">Magica girl</a>
-    </label>
-    <label class="checkbox-inline">
-        <a href="{{ route('AnimeIndex', ['genre'=>6]) }}">Harem</a>
-    </label>
-    <label class="checkbox-inline">
-        <a href="{{ route('AnimeIndex', ['genre'=>7]) }}">School Life</a>
-    </label>
+    <div class="row">
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>1]) }}">Action</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>2]) }}">Combat</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>3]) }}">Cyber & Mecha </a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>4]) }}">Ecchi</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>5]) }}">Epique & Héroique</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>6]) }}">Fantastique & Mythe</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>7]) }}">Harem</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>8]) }}">Musical</a>
+        </div>
+
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>9]) }}">Romance</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>10]) }}">Amour & Amitié</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>11]) }}">Comédie</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>12]) }}">Fantasy</a>
+        </div>
+
+        <div class="col-md-3  col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>13]) }}">Educatif</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>14]) }}">Espace & Sci-Fiction</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>15]) }}">Historique</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>16]) }}">School Life</a>
+        </div>
+
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>17]) }}">Sport</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>18]) }}">Aventure</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>19]) }}">Contes & Récits</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>20]) }}">Drame</a>
+        </div>
+
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>21]) }}">Enigme & Policier</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>22]) }}">Familial & Jeunesse</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>23]) }}">Gastronomie</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>24]) }}">Horreur</a>
+        </div>
+
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>25]) }}">Magical Girl</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>26]) }}">Psychologie</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>27]) }}">Surnaturel</a>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-12 text-center">
+            <a class="btn btn-default btn-xs" href="{{ route('AnimeIndex', ['genre'=>28]) }}">Tranche de vie</a>
+        </div>
+    </div>
     <br>
     <br>
     <br>

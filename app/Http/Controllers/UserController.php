@@ -1,12 +1,6 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\User;
-
-
-
-
 class UserController extends Controller
 {
     /**
@@ -19,7 +13,6 @@ class UserController extends Controller
         $users = User::all();
         return view('users.index', ['users' => $users]);
     }
-
     /**
      * Display the specified resource.
      *
@@ -29,16 +22,12 @@ class UserController extends Controller
     public function show($id)
     {
         $user = User::findOrFail($id);
-
         return view('users.show', ['user' => $user]);
-
     }
-
     public function dashboard()
     {
-        
+
         return view('users.dashboard');
     }
 
-    
 }

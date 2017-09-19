@@ -36,7 +36,6 @@
             {{$anime->vod}} <br> <br>
             note : <br>
             {{$anime->note}} <br> <br>
-
             saison : <br>
             {{$anime->season}} <br> <br>
             episode : <br>
@@ -45,7 +44,6 @@
             {{$anime->release_date}} <br> <br>
             date de fin : <br>
             {{$anime->end_date}} <br> <br>
-
 
 
             Genres :
