@@ -14,20 +14,24 @@
     <style>
 
         .firstdiv {
+            border-radius: 10px;
             background-color: #cccccc;
             padding: 0.5em;
-            box-shadow: 5px 0px 5px black;
+            opacity: 0.8;
 
         }
 
         body {
-            background-color: #1b6d85;
+            background-image: url('{{asset('img/anime-membre.jpg')}}');
+            background-repeat: no-repeat;
+            background-size: cover;
 
         }
 
-
         .contenu {
-            margin: 5px;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
         }
 
         #logo {
@@ -35,6 +39,7 @@
             height: 50px;
 
         }
+
         h1 {
             margin-top: 0px;
         }
@@ -45,24 +50,42 @@
             padding-right: 0px;
 
         }
-        .image-anime
-        {
-            max-width: 20%;
+
+
+        .image-anime {
+            max-width: 40%;
             height: auto;
-            margin-left: 40%;
+            margin-left: 30%;
+
         }
-        .titre-anime {
-            font-size: 50px;
-        }
-        .basdepage {
-            border: 1px solid black;
-            background-color: #cccccc;
-        }
-        .image-anime-random
-        {
+
+        .image-anime-random {
             max-width: 100%;
             height: auto;
+
         }
+
+        .titre-anime {
+            color: black;
+            font-size: 50px;
+        }
+
+        .basdepage {
+
+            background-color: #cccccc;
+            opacity: 0.8;
+
+            margin-top: 20%;
+
+        }
+
+        .block-central {
+            margin-left:20px;
+            margin-right: 20px;
+            margin-top:20px;
+        }
+
+@yield('style')
     </style>
 
 
@@ -71,17 +94,17 @@
 @component('elements.public-menu')
 @endcomponent
 
-<div class=" container-fluid">
+<div class=" container-fluid block-central">
     <div class="contenu row">
 
 
-        <div class="col-md-2 col-xs-2 col-lg-2">
+        <div class="col-md-4 col-xs-4 col-lg-4">
             <div class="firstdiv">
                 @component('elements.random')
                 @endcomponent
             </div>
         </div>
-        <div class="col-md-8 col-xs-8 col-lg-8">
+        <div class="col-md-5 col-xs-5 col-lg-5">
             <div class="firstdiv">
 
                 @if (session('status'))
@@ -121,7 +144,7 @@
         </div>
 
 
-        <div class="col-md-2 col-xs-2 col-lg-2">
+        <div class="col-md-3 col-xs-3 col-lg-3">
             <div class="firstdiv">
                 @component('elements.lasts_comments')
                 @endcomponent
@@ -130,7 +153,7 @@
     </div>
 
 
-    <div class="col-md-12 ">
+    <div class="col-md-12 basdepage">
         @component('elements.footer')
         @endcomponent
     </div>

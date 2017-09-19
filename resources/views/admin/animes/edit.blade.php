@@ -49,7 +49,6 @@
             </div>
         </div>
     </div>
-
     <br>
     {!! Form::label('end_date') !!}
     <div class="container">

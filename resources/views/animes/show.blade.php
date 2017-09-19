@@ -1,16 +1,33 @@
 @extends('templates.default')
-
+@section('style')
+    .panel-head-anime-show {
+    background-image: url('{{asset('img/'.$anime->pictures)}}');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+@endsection
 
 
 @section('content')
 
 
+
     <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h1 class="panel-title text-center titre-anime">
-                {{$anime->title}}</h1>
-            <img class="image-anime" src="{{asset('img/'.$anime->pictures)}}" alt="image-anime">
+        <div class="panel-heading panel-head-anime-show">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
+        <h1 class="titre-anime panel-title text-center"> {{$anime->title}}</h1>
+
         <div class="panel-body">
 
             Synopsis : <br>
@@ -23,13 +40,17 @@
             {{$anime->season}} <br> <br>
             episode : <br>
             {{$anime->episode}} <br> <br>
-
+            Date de début : <br>
+            {{$anime->release_date}} <br> <br>
+            Date de fin : <br>
+            {{$anime->end_date}} <br> <br>
 
             Genres :
             @foreach($anime->genres as $genre)
                 <i class="fa fa-tag"></i> {{ $genre->name }}
             @endforeach
-            
+
+
 
         </div>
     </div>

@@ -22,13 +22,13 @@ class LastCommentsComposer
 
             $animes->orderBy('updated_at', 'desc');
 
-        $resultats = $animes->get();
+        $resultats = $animes->get()->first();
 
 
 
 
 
-            $view->with('commentaires', $resultats[0] );
+            $view->with('commentaires', $resultats );
 
 
 

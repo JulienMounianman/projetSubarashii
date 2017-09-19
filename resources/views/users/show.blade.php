@@ -29,14 +29,12 @@
                 <br>
                 Website :
                 <a href="http://{{$user->website_url}}"> Website</a>
-
             </p>
             <button class="btn btn-primary" type="button">
                 Posts <span class="badge">{{$user->posts->count()}}</span>
             </button>
         </div>
     </div>
-
 
     <h2 class="title">Articles</h2>
 

@@ -11,7 +11,7 @@
             @if (auth()->user()->role === 'admin')
                 <li><a href="{{ route('AdminUserDashboard') }}">Administration</a></li>
             @endif
-            <li><a href="{{ route('UserDashboard') }}">Mon profil</a></li>
+            <li><a href="{{ route('UserDashboard' , ['id' => auth()->user()->id]) }}">Mon profil</a></li>
             <li role="separator" class="divider"></li>
             <li>
                 <a class="navbar-item" href="{{ route('logout') }}"

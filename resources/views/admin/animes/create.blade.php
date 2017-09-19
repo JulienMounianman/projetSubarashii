@@ -35,7 +35,7 @@
     {!! Form::text('licenced') !!}
     <br>
     {!! Form::label('release_date') !!}
-    <div class="container">
+       <div class="container">
         <div class="col-sm-6" style="height:130px;">
             <div class="form-group">
                 <div class='input-group date' id='dateTimeRelease'>
@@ -47,8 +47,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
+    </div>  
     <br>
     {!! Form::label('end_date') !!}
     <div class="container">
@@ -64,7 +63,6 @@
             </div>
         </div>
     </div>
-
     <br>
     {!! Form::label('Genres de l\'animés') !!}
     {!! Form::select('anime.genres[]', $genres, null, ['multiple'=>true,'class' => 'form-control']) !!}

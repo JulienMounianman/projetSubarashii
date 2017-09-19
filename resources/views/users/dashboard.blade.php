@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="panel panel-default">
-        <div class="panel-heading"><img src="{{asset('img/' . auth()->user()->avatar)}}" alt="img" class=""></div>
+        <div class="panel-heading"><img src="{{asset('img/' . auth()->user()->avatar)}}" alt="img" ></div>
         <div class="panel-body">
 
             Nom :<strong>{{auth()->user()->first_name}}</strong> <br>
@@ -20,13 +20,34 @@
             <br>
             Birthdate : {{auth()->user()->birthdate}}
             <br>
-            Portfolio : https//{{auth()->user()->portfolio_url}}
-            <br>
-            Website : http://{{auth()->user()->website_url}}
         </div>
     </div>
 
 
+    {!! Form::model($user, ['route'=>['UserUpdate', $user->id]]) !!}
+
+    {!! Form::label('pseudo') !!}
+    {!! Form::text('pseudo') !!}
+
+
+    <br>
+    {!! Form::label('birthdate') !!}
+    {!! Form::date('birthdate') !!}
+<br>
+        {!! Form::label('password') !!}
+        {!! Form::password('password') !!}
+
+    <br>
+    {!! Form::label('first_name') !!}
+    {!! Form::text('first_name') !!}
+    <br>
+    {!! Form::label('last_name') !!}
+    {!! Form::text('last_name') !!}
+
+    <br>
+    {!! Form::submit('Enregistrer') !!}
+    {!! Form::close() !!}
+    
 
 
 
