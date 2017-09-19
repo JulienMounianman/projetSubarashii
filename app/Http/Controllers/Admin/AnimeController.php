@@ -95,17 +95,21 @@ class AnimeController extends Controller
             'title' => 'required|string',
             'status' => 'required|string',
             'summary' => 'required|string',
-            'pictures' => 'required|string',
             'vod' => 'required|string',
             'note' => 'required|integer',
             'season' => 'required|integer',
             'episode' => 'required|integer',
-            'licenced' => 'required|boolean'
-
+            'licenced' => 'required|boolean',
+            'release_date' => 'required|date',
+            'end_date' => 'required|date',
         ]);
 
 
+
+
         $data = $request->all();
+        $data['pictures']= $request->pictures->store('uploads', 'public');
+
 
         if (isset($data['anime_genres'])) {
             $genres = $data['anime_genres'];
@@ -133,9 +137,11 @@ class AnimeController extends Controller
 
     public function edit($id)
     {
+        $genres = Genre::all()->pluck('name', 'id');
         $anime = Anime::findOrFail($id);
 
-        return view('admin.animes.edit', ['anime' => $anime]);
+
+        return view('admin.animes.edit', ['anime' => $anime ,'genres' => $genres]);
     }
 
     public function update(Request $request, $id)
@@ -145,19 +151,40 @@ class AnimeController extends Controller
             'title' => 'required|string',
             'status' => 'required|string',
             'summary' => 'required|string',
-            'pictures' => 'required|string',
+            
             'vod' => 'required|string',
             'note' => 'required|integer',
             'season' => 'required|integer',
             'episode' => 'required|integer',
-            'licenced' => 'required|boolean'
+            'licenced' => 'required|boolean',
+            'release_date' => 'required|date',
+            'end_date' => 'required|date',
+
         ]);
+
+        $data = $request->all();
+
+        $data['pictures']= $request->pictures->store('uploads', 'public');
+
+        if (isset($data['anime_genres'])) {
+            $genres = $data['anime_genres'];
+        } else {
+            $genres = [];
+        }
+
+
         $anime = Anime::findOrFail($id);
 
-        if ($anime->update($request->all())) {
-            Session::flash('message', 'Anime mise à jour');
-            return redirect()->route('AdminAnimeIndex');
-        } else {
+
+        if ($anime->exists) {
+                if (count($genres) > 0) {
+                    $anime->genres()->attach($genres);
+                }
+
+            if ($anime->update($data)) {
+                Session::flash('message', 'Anime mise à jour');
+                return redirect()->route('AdminAnimeIndex');
+        }} else {
             Session::flash('message', 'Une erreur est survenue lors de la mise à jour');
             return redirect()->route('AdminAnimeEdit', ['id' => $id]);
         }

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Blog321 - @yield('title')</title>
+    <title>Subarashii - @yield('title')</title>
 
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
@@ -14,20 +14,24 @@
     <style>
 
         .firstdiv {
+            border-radius: 10px;
             background-color: #cccccc;
             padding: 0.5em;
-            box-shadow: 5px 0px 5px black;
+            opacity: 0.8;
 
         }
 
         body {
-            background-color: #1b6d85;
+            background-image: url('{{asset('img/anime-membre.jpg')}}');
+            background-repeat: no-repeat;
+            background-size: cover;
 
         }
 
-
         .contenu {
-            margin: 5px;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
         }
 
         #logo {
@@ -35,6 +39,7 @@
             height: 50px;
 
         }
+
         h1 {
             margin-top: 0px;
         }
@@ -46,6 +51,35 @@
 
         }
 
+
+        .image-anime {
+            max-width: 40%;
+            height: auto;
+            margin-left: 30%;
+
+        }
+
+        .image-anime-random {
+            max-width: 100%;
+            height: auto;
+
+        }
+
+        .titre-anime {
+            color: black;
+            font-size: 50px;
+        }
+
+        .basdepage {
+            border: 1px solid black;
+            background-color: #cccccc;
+        }
+
+        .block-central {
+            margin: 20px;
+        }
+
+@yield('style')
     </style>
 
 
@@ -54,17 +88,17 @@
 @component('elements.public-menu')
 @endcomponent
 
-<div class=" container-fluid">
+<div class=" container-fluid block-central">
     <div class="contenu row">
 
 
-        <div class="col-md-2 col-xs-2 col-lg-2">
+        <div class="col-md-4 col-xs-4 col-lg-4">
             <div class="firstdiv">
                 @component('elements.random')
                 @endcomponent
             </div>
         </div>
-        <div class="col-md-8 col-xs-8 col-lg-8">
+        <div class="col-md-5 col-xs-5 col-lg-5">
             <div class="firstdiv">
 
                 @if (session('status'))
@@ -104,7 +138,7 @@
         </div>
 
 
-        <div class="col-md-2 col-xs-2 col-lg-2">
+        <div class="col-md-3 col-xs-3 col-lg-3">
             <div class="firstdiv">
                 @component('elements.lasts_comments')
                 @endcomponent
@@ -113,7 +147,7 @@
     </div>
 
 
-    <div class="col-md-12">
+    <div class="col-md-12 ">
         @component('elements.footer')
         @endcomponent
     </div>
