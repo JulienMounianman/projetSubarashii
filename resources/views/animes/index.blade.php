@@ -140,7 +140,8 @@
 
                 <!-- Modal -->
                 <div class="modal fade" id="modal-{{$anime->id}}" tabindex="-1" role="dialog"
-                     aria-labelledby="myModalLabel">
+                     aria-labelledby="myModalLabel"
+                     data-backdrop="false" >
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -177,3 +178,4 @@
 
     @endforeach
 @endsection
+
