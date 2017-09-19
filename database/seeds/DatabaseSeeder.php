@@ -18,6 +18,8 @@ class DatabaseSeeder extends Seeder
          $this->call(CategoriesTableSeeder::class);
          $this->call(PostsTableSeeder::class);
          $this->call(CommentsTableSeedeer::class);
+         $this->call(Animes_GenresTableSeedeer::class);
+
 
     }
 }

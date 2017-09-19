@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="panel panel-default">
-        <div class="panel-heading"><img src="{{asset('img/' . auth()->user()->avatar)}}" alt="img" class=""></div>
+        <div class="panel-heading"><img src="{{asset('img/' . auth()->user()->avatar)}}" alt="img" ></div>
         <div class="panel-body">
 
             Nom :<strong>{{auth()->user()->first_name}}</strong> <br>
@@ -20,13 +20,10 @@
             <br>
             Birthdate : {{auth()->user()->birthdate}}
             <br>
-            Portfolio : https//{{auth()->user()->portfolio_url}}
-            <br>
-            Website : http://{{auth()->user()->website_url}}
         </div>
     </div>
 
-
+    
 
 
 

@@ -71,12 +71,19 @@
         }
 
         .basdepage {
-            border: 1px solid black;
+
             background-color: #cccccc;
+            opacity: 0.8;
+
+            margin-top: 20%;
+
         }
 
         .block-central {
-            margin: 20px;
+            margin-left:20px;
+            margin-right: 20px;
+            margin-top:20px;
+
         }
 
 @yield('style')
@@ -147,7 +154,9 @@
     </div>
 
 
-    <div class="col-md-12 ">
+
+    <div class="col-md-12 basdepage">
+
         @component('elements.footer')
         @endcomponent
     </div>
